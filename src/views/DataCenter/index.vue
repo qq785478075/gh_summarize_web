@@ -1,6 +1,6 @@
 <script setup>
-const getImg = (url) => {
-    return new URL(url, import.meta.url).href
+const getImg = (name) => {
+    return new URL(`./images/${name}`, import.meta.url).href
 }
 </script>
 <template>
@@ -137,7 +137,7 @@ const getImg = (url) => {
                     <el-carousel-item v-for="item in 6" :key="item" style="height: auto;">
                         <div class="carousel-content">
                             <div class="carousel">
-                                <img :src="getImg(`images/occ${item}.png`)" alt="" srcset="">
+                                <img :src="getImg(`occ${item}.png`)" alt="" srcset="">
                             </div>
                         </div>
                     </el-carousel-item>
