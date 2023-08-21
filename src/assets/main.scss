@@ -1,0 +1,57 @@
+@import url('./base.css');
+
+
+body,
+html {
+  background-color: var(--background-color);
+  background-image: url('./background.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.carousel-layer {
+  h1 {
+    font-size: 42px;
+    font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .carousel-content {
+    .carousel {
+      width: 923px;
+      height: 626px;
+      margin: auto;
+      background-image: url('./browser.png');
+      background-repeat: no-repeat;
+      position: relative;
+
+      img {
+        display: block;
+        position: relative;
+        top: 54px;
+        left: 3px;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+
+  .carousel-layer{
+    .carousel-content{
+      .carousel{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        img{
+          display: block;
+          width: 100%;
+          top: 20px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
